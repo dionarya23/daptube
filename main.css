@@ -1,0 +1,48 @@
+.hilang{
+  display: none;
+}
+@keyframes lds-blocks {
+  0% {
+    background: #fdc823;
+  }
+  12.5% {
+    background: #fdc823;
+  }
+  12.625% {
+    background: #eca611;
+  }
+  100% {
+    background: #eca611;
+  }
+}
+@-webkit-keyframes lds-blocks {
+  0% {
+    background: #fdc823;
+  }
+  12.5% {
+    background: #fdc823;
+  }
+  12.625% {
+    background: #eca611;
+  }
+  100% {
+    background: #eca611;
+  }
+}
+.lds-blocks {
+  position: relative;
+}
+.lds-blocks div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #eca611;
+  -webkit-animation: lds-blocks 1s linear infinite;
+  animation: lds-blocks 1s linear infinite;
+}
+.lds-blocks {
+  width: 200px !important;
+  height: 200px !important;
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
