@@ -13,7 +13,7 @@ var VueO = new Vue({
       }else{
         this.tampilkan('belum');
         document.getElementById('utama').classList.add('hilang');
-        this.$http.get('http://wahidganteng.ga/process/api/470e9ccb4849637a807a4498a31946a9/youtube-downloader?url='+this.url).then(response => {
+        this.$http.get('https://wahidganteng.ga/process/api/470e9ccb4849637a807a4498a31946a9/youtube-downloader?url='+this.url).then(response => {
         this.tampilkan('selesai')
         document.getElementById('keduax').classList.remove('hilang');
         document.getElementById('textTitle').innerHTML = response.body.title;
